@@ -1,0 +1,19 @@
+{
+	"host": "HOST",
+	"port": "PORT",
+  "public": "../public/",
+  "mongodb": "MONGODB",
+	"auth": {
+		"secret": "FEATHERS_AUTH_SECRET"
+	},
+	"twilio": {
+		"accountSid": "TWILIO_ACCOUNT_SID",
+		"authToken": "TWILIO_AUTH_TOKEN",
+    "twimlAppSid": "TWILIO_TWIML_APP_SID"
+	},
+	"mailgun": {
+    "domain": "MAILGUN_DOMAIN",
+		"apiKey": "MAILGUN_API_KEY",
+		"sendTo": "MAILGUN_SEND_TO"
+	}
+}

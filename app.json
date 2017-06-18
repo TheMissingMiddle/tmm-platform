@@ -1,0 +1,66 @@
+{
+  "name": "themissingmiddle-backend",
+  "description": "A quick prototype testing Twilio",
+  "keywords": [
+    "node",
+    "express",
+    "feathers",
+    "feathersjs",
+    "twilio",
+    "chat",
+    "realtime",
+    "nedb"
+  ],
+  "website": "https://github.com/lordvkrum/themissingmiddle-backend",
+  "repository": "https://github.com/lordvkrum/themissingmiddle-backend",
+  "logo": "http://s32.postimg.org/4k9q912x1/aar_QEIys.jpg",
+  "success_url": "/",
+  "env": {
+    "FEATHERS_AUTH_SECRET": {
+      "description": "Your secret for encrypting JWT's used with Feather authentication",
+      "required": true,
+      "generator": "secret"
+    },
+    "TWILIO_ACCOUNT_SID": {
+      "description": "Your Twilio account SID",
+      "required": true
+    },
+    "TWILIO_AUTH_TOKEN": {
+      "description": "Your Twilio account auth token",
+      "required": true
+    },
+    "TWILIO_TWIML_APP_SID": {
+      "description": "Your Twilio Twiml App SID",
+      "required": true
+    },
+    "MAILGUN_DOMAIN": {
+      "description": "Your Mailgun domain",
+      "required": true
+    },
+    "MAILGUN_API_KEY": {
+      "description": "Your Mailgun api key",
+      "required": true
+    },
+    "MAILGUN_SEND_TO": {
+      "description": "Emails to send call recordings",
+      "required": true
+    },
+    "HOST": {
+      "description": "Your deploy host",
+      "required": false
+    },
+    "PORT": {
+      "description": "Your deploy port",
+      "required": false
+    }
+  },
+  "formation": [
+    {
+      "quantity": 1,
+      "size": "free",
+      "type": "web"
+    }
+  ],
+  "image": "heroku/nodejs",
+  "addons": []
+}
